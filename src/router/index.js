@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Todo from '../views/Todo.vue'
+import Photos from '../views/Photos.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +10,11 @@ const routes = [
     path: '/Todo',
     name: 'Todo',
     component: Todo
+  },
+  {
+    path: '/Photos',
+    name: 'Photos',
+    component: Photos
   },
   {
     path: '/about',

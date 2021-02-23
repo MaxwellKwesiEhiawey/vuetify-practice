@@ -89,10 +89,12 @@
       </v-menu>
 
       <template v-slot:extension>
-        <v-tabs align-with-title>
-          <v-tab>Tab 1</v-tab>
-          <v-tab>Tab 2</v-tab>
-          <v-tab>Tab 3</v-tab>
+        <v-tabs class="pt=10" align-with-title>
+          <router-link to ="/Todo"><v-tab>Todo</v-tab></router-link>
+           <router-link to ="/Photos"><v-tab>Photos</v-tab></router-link>
+           <router-link to ="/About"><v-tab>About</v-tab></router-link>
+          <!-- <v-tab>Tab 2</v-tab>
+          <v-tab>Tab 3</v-tab> -->
         </v-tabs>
       </template>
     </v-app-bar>
